@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "PrimeQ[{"
+for (( c=2; c<=$1; c++ ))
+do
+  ./check_deck $c
+done
+echo "}]"
